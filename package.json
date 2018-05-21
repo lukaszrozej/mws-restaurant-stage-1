@@ -1,0 +1,23 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "A project for Udacity front end nanodegree",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaszrozej/mws-restaurant-stage-1.git"
+  },
+  "author": "Łukasz Rożej",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukaszrozej/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/lukaszrozej/mws-restaurant-stage-1#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}
