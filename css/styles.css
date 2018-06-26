@@ -280,6 +280,30 @@ nav h1 a {
 .review h3 {
   background-color: #252831;
   color: #fff;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewer-name,
+.review-date,
+.rating,
+.comments {
+  margin: 1rem;
+}
+
+.rating {
+  background-color: #f5ac00;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0.5rem 1rem; 
+  width: 7rem;
+}
+
+.comments {
+  color: #666;
 }
 
 #reviews-list li {
@@ -291,9 +315,7 @@ nav h1 a {
   position: relative;
   margin-top: 1rem;
 }
-#reviews-list li p {
-  margin: 0 0 10px;
-}
+
 #restaurant-hours td {
   color: #666;
 }
