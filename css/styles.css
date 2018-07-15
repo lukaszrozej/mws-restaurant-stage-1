@@ -19,8 +19,14 @@ body {
 }
 a {
 	color: #FFD68A;
-	text-decoration: none;
+  text-decoration: none;
 }
+
+select:focus,
+a:focus {
+  outline: 3px solid #ff4444;
+}
+
 a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
