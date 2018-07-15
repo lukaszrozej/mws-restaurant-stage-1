@@ -189,7 +189,6 @@ nav h1 a {
 }
 #restaurants-list li a {
   background-color: #463c29;
-  border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
   font-size: 1rem;
