@@ -160,6 +160,9 @@ nav.breadcrumb {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -169,13 +172,14 @@ nav.breadcrumb {
   min-height: 380px;
   padding: 0 1rem 1.5rem;
   text-align: left;
+  max-width: 15rem;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
+  /* min-height: 248px; */
   min-width: 100%;
 }
 #restaurants-list li h1 {
