@@ -150,10 +150,12 @@ createRestaurantHTML = (restaurant) => {
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
+  neighborhood.setAttribute('aria-label', `Neighborhood of ${restaurant.name} restaurant`);
   li.append(neighborhood);
 
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
+  address.setAttribute('aria-label', `Address of ${restaurant.name} restaurant`);
   li.append(address);
 
   const more = document.createElement('a');

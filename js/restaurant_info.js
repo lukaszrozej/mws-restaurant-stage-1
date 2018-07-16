@@ -54,6 +54,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
+  address.setAttribute('aria-label', `Address of ${restaurant.name} restaurant`);
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
@@ -62,6 +63,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
+  cuisine.setAttribute('aria-label', `Cuisine of ${restaurant.name} restaurant`);
 
   // fill operating hours
   if (restaurant.operating_hours) {
@@ -74,8 +76,12 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 /**
  * Create restaurant operating hours HTML table and add it to the webpage.
  */
-fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
+// fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
+fillRestaurantHoursHTML = (restaurant = self.restaurant) => {
   const hours = document.getElementById('restaurant-hours');
+  hours.setAttribute('aria-label', `Open hours of ${restaurant.name} restaurant per weekday`);
+
+  const operatingHours = restaurant.operating_hours
   for (let key in operatingHours) {
     const row = document.createElement('tr');
 
