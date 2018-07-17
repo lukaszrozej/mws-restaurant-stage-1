@@ -44,7 +44,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f9f9f9;
   min-height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
 #footer {
   background-color: #444;
   color: #dbdbdb;
@@ -222,6 +225,7 @@ nav.breadcrumb {
   background: blue none repeat scroll 0 0;
   height: 40vh;
 }
+
 .inside #map {
   background-color: #ccc;
   height: 100%;
@@ -332,4 +336,20 @@ nav.breadcrumb {
 
 #restaurant-hours td {
   color: #4e4e4e
+}
+
+@media screen and (min-width: 800px) {
+  .inside #maincontent {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .inside #map-container {
+    width: 50%;
+    height: 100vh;
+  }
+  .inside #restaurant-container {
+    width: 50%
+  }
 }
