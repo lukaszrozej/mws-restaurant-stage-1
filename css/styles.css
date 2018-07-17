@@ -35,7 +35,7 @@ a img{
 	border: none 0px #fff;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
+  margin: 0 0 1.20rem;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -141,7 +141,7 @@ nav.breadcrumb {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
-  margin: 0 20px;
+  margin: 0 1.2rem;
 
   width: 100%;
 }
@@ -161,7 +161,7 @@ nav.breadcrumb {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 0;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +172,6 @@ nav.breadcrumb {
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 1rem;
-  min-height: 380px;
   padding: 0 1rem 1.5rem;
   text-align: left;
   max-width: 15rem;
@@ -182,7 +181,6 @@ nav.breadcrumb {
   display: block;
   margin: 0;
   max-width: 100%;
-  /* min-height: 248px; */
   min-width: 100%;
 }
 #restaurants-list li h1 {
