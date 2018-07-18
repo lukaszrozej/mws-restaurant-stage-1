@@ -183,7 +183,7 @@ nav.breadcrumb {
   max-width: 100%;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #463c29;
   font-family: Arial,sans-serif;
   font-size: 1.2rem;
