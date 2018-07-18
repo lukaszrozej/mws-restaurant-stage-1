@@ -51,6 +51,7 @@ fetchRestaurantFromURL = (callback) => {
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
+  name.setAttribute('tabindex', '0');
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
@@ -60,6 +61,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   image.setAttribute('alt', `Picture of ${restaurant.name} restaurant`);
+  image.setAttribute('tabindex', '0');
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -80,6 +82,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 fillRestaurantHoursHTML = (restaurant = self.restaurant) => {
   const hours = document.getElementById('restaurant-hours');
   hours.setAttribute('aria-label', `Open hours of ${restaurant.name} restaurant per weekday`);
+  hours.setAttribute('tabindex', '0');
 
   const operatingHours = restaurant.operating_hours
   for (let key in operatingHours) {
@@ -124,6 +127,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = (review) => {
   const li = document.createElement('li');
+  li.setAttribute('tabindex', '0');
 
   const h3 = document.createElement('h3');
 
